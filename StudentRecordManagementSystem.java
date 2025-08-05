@@ -11,7 +11,9 @@ class Student {
         this.marks = marks;
     }
 
-    public int getId() { return id; }
+    public int getId() { 
+        return id;
+    }
 
     public void show() {
         System.out.println("ID: " + id + ", Name: " + name + ", Marks: " + marks);
@@ -24,14 +26,14 @@ public class StudentRecordManagementSystem{
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\n1.Add  2.View  3.Delete  4.Exit");
+            System.out.println("\n 1.Add  2.View  3.Delete  4.Exit");
             System.out.print("Enter your choice:");
             int ch = sc.nextInt();
 
             if (ch == 1) {
                 System.out.print("ID: ");
                 int id = sc.nextInt();
-                sc.nextLine(); // consume newline
+                sc.nextLine(); 
                 System.out.print("Name: ");
                 String name = sc.nextLine();
                 System.out.print("Marks: ");
@@ -53,4 +55,5 @@ public class StudentRecordManagementSystem{
         System.out.println("Operation sucessfull");
         sc.close();
     }
+
 }
